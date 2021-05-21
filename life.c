@@ -32,7 +32,7 @@ void freeBoard(Board* b)
 
 Board* readBoard(char* fName)
 {
-   int row,col,i,j;
+   int row,col,i,j; 
    FILE* src = fopen(fName,"r");
    fscanf(src,"%d %d\n",&row,&col);
    Board* rv = makeBoard(row,col);
